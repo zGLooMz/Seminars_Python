@@ -7,7 +7,7 @@
 #     - 7 -> да
 #     - 1 -> нет
 
-def InputNumbers(inputText):
+def inputNumbers(inputText):
     while True:
         number = input(f"{inputText}")
         if not number.isdigit():
@@ -15,7 +15,7 @@ def InputNumbers(inputText):
         else:
             return int(number)
 
-def CheckNumber(number):
+def checkNumber(number):
     if 6 <= number <= 7:
         print("Да, это выходной")
     elif 0 < number < 6:
@@ -24,5 +24,5 @@ def CheckNumber(number):
         print("Число не обозначает день недели!")
 
 
-num = InputNumbers("Введите число: ")
-CheckNumber(num)
+num = inputNumbers("Введите число: ")
+checkNumber(num)
