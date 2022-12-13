@@ -16,7 +16,7 @@ def inputСoord(x):
             if number.isalpha():
                 print('Нужно ввести число!')
             elif float(number) == 0:
-                print("Координата не должно быть равна 0 ")
+                print('Координата не должно быть равна 0 ')
             else:
                 coord[i] = float(number)
                 break    
@@ -30,7 +30,7 @@ def checkCoordinates(xy):
         quarter = 3
     elif xy[0] > 0 and xy[1] < 0:
         quarter = 4
-    print(f"Точка находится в {quarter} четверти плоскости")
+    print(f'Точка находится в {quarter} четверти плоскости')
 
 сoordinate = inputСoord(2)
 checkCoordinates(сoordinate)
