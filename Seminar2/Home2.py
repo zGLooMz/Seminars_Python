@@ -24,6 +24,6 @@ num = InputNumbers("Введите число: ")
 
 recursion_list = []
 for j in range(1, num + 1):
-    list.append(recursion(j))
+    recursion_list.append(recursion(j))
 
 print(f"При N = {num}:  {recursion_list}")
