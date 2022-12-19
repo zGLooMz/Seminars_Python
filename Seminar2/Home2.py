@@ -4,15 +4,14 @@
 
 # - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
+
 def InputNumbers(text):
-    flag = False
-    while not flag:
-        try:
-            number = int(input(f"{text}"))
-            flag = True
-        except ValueError:
-            print("Нужно ввести целое число")
-    return number
+    while True:
+        number = input(f'{text}')
+        if not number.isdigit():
+            print('Нужно ввести целое положительное число!')
+        else:
+            return int(number)
 
 def recursion(n):
     if n == 1:
