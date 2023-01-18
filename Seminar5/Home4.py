@@ -3,6 +3,9 @@
 with open('H:\Python\Seminars_Python\Seminar5\RLEdecoded.txt', 'r') as data:
     decoded_text = data.read()
 
+def writeFile1(st):
+    with open('H:\Python\Seminars_Python\Seminar5\RLEdecodedResult.txt', 'w') as data:
+        data.write(st)
 
 def encode_rle(text):
 
@@ -24,11 +27,16 @@ def encode_rle(text):
     return str_code
             
 str_code = encode_rle(decoded_text)
+writeFile1(str_code)
 print(f'Исходный текст ->', decoded_text)
 print(f'После сжатия   ->', str_code)
 
 with open('H:\Python\Seminars_Python\Seminar5\RLEencoded.txt', 'r') as data:
     encoded_text = data.read()
+
+def writeFile2(st):
+    with open('H:\Python\Seminars_Python\Seminar5\RLEencodedResult.txt', 'w') as data:
+        data.write(st)
 
 def decoding_rle(text:str):
     count = ''
@@ -42,6 +50,7 @@ def decoding_rle(text:str):
     return str_decode
 
 str_decode = decoding_rle(encoded_text)
+writeFile2(str_decode)
 print(f'Исходный текст      ->', encoded_text)
 print(f'После востановления ->',str_decode)
 
