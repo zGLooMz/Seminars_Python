@@ -1,4 +1,3 @@
-# модуль экспорта данных
 
 def export_data():
     with open('H:\Python\Seminars_Python\Seminar7\phone.csv', 'r') as file:

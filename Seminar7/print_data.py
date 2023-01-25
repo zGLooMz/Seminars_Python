@@ -1,3 +1,4 @@
+
 def print_data(data):
     if len(data) > 0:
         print("Фамилия".center(20), "Имя".center(20),

@@ -1,4 +1,3 @@
-# модуль
 
 def import_data(data, sep=None):
     with open('H:\Python\Seminars_Python\Seminar7\phone.csv', 'a+') as file:
